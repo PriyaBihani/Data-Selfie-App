@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href ="./style.css">
+    <title>Data selfie app</title>
+</head>
+<body>
+        <header>
+                <ul id = "navBar">
+                    <li><a href = "index.html"> Enter</a></li>
+                    <li> <a href ="all.html" >List</a> </li>
+                </ul>
+                <div class ="main-text">Data Selfie App</div>
+            </header>
+
+        <script>
+            // we need to log all the data in the page. For that we will send a request to the server and then the server will find it in the database and rest is history.
+            getData()
+            async function getData(){
+              const response= await fetch('/api');
+              const data= await response.json()
+              for(item of data){
+                  // pure simple java script but i dont know how to style these :-/
+                  const root = document.createElement('p')
+                  const name  = document.createElement('div')
+                  const geo = document.createElement('div')
+                  const date = document.createElement('div')
+                  const image = document.createElement('img')
+                
+                  name.textContent = `name : ${item.name}`
+                  geo.textContent = `lat : ${item.lat}, lon : ${item.lon}` 
+                  const dateString = new Date(item.timeStamp).toLocaleString()//it will convert the date into readable form
+                  date.textContent = dateString;   
+                  image.src = item.image;
+                  root.append(name, geo,date,image)
+                  document.body.append(root)            
+              }
+              console.log(data)
+            }
+           
+        </script>
+    
+</body>
+</html>

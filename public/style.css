@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania|Raleway&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: raleway;
+}
+header{
+
+}
+#navBar{
+    text-align: center;
+}
+#navBar li {
+    display: inline;
+    
+}
+#navBar li a {
+    text-decoration: none;
+    color: black;
+    padding : 30px;
+    font-size: 1.5rem;
+    
+}
+.main-text{
+    font-family: metal mania;
+    font-size: 4rem;
+    text-align: center;
+    padding: 25px;
+}
+#latlon{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.3rem;
+}
+#input-fields{
+    text-align: center;
+}
+#name{
+    border: none;
+    border-bottom: 1px black solid;
+    padding: 3px;
+    font-size: 1.1rem;
+    margin: 30px;
+    margin-left: 10px;
+}
+.align{
+    text-align: center;
+    margin: 30px;
+}
+#geolocate{
+    text-align: center;
+    padding: 40px 15px;
+    font-size:1.2rem;
+    border-radius: 50%;
+    text-emphasis: none;
+}

@@ -1,0 +1,21 @@
+{
+    "name": "code-train",
+    "version": "1.0.0",
+    "description": "this is the data selfie app by joe le",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "keywords": [
+        "example",
+        "data",
+        "selfie"
+    ],
+    "author": "Priya bihani",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nedb": "^1.8.0"
+    }
+}
