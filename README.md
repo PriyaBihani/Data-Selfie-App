@@ -9,3 +9,7 @@ While capturing, it will also geolocate your position(latitude and longitude).
 It will store the data in database and you can see the pictures, location and your name there.
 
 It has a subtle interface with bootstrap and CSS3. With wasy user navigation.
+
+### To Run 
+1) npm install
+2) npm run start
